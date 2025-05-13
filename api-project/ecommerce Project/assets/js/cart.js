@@ -85,7 +85,6 @@ function updateQuantity(event, change) {
         if (product.quantity <= 0) {
             cart = cart.filter((item) => item.id !== productId);
         }
-
         localStorage.setItem("cart", JSON.stringify(cart));
         loadCart();
     }
